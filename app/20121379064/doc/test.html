@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>页面切换</title>
+	<link rel="stylesheet" href="stylesheets/test.css">
+	<style type="text/css">
+	
+		html,body{
+			height: 100%;
+			overflow: hidden;
+		}
+
+		#container,.section{
+			height: 100%;
+			position: relative;
+		}
+		#section0,
+		#section1,
+		#section2,
+		#section3,
+		#section4{
+			background-color: #000;
+			background-size: cover;
+			background-position: 50% 50%;
+		}
+		
+		.left{
+			float: left;
+		}
+		.intro{
+			position: absolute;
+			top: 50%;
+			width: 100%;
+			-webkit-transform: translateY(-50%);
+			transform: translateY(-50%);
+			text-align: center;
+		}
+		#pages{
+			position:fixed;
+			right: 10px;
+			top: 50%;
+			list-style: none;
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<div class="section active" id="section0">
+			<div class="doc-page">
+			<div class="aside">
+				<h4 class="h4"><a href="">The Grid</a></h4>
+				<h4 class="h4"><a href="">The Typography</a></h4>
+				<h4 class="h4"><a href="">The Nav</a></h4>
+				<h4 class="h4"><a href="">The Button</a></h4>
+				<h4 class="h4"><a href="">The Color</a></h4>
+				<h4 class="h4"><a href="">The Lists</a></h4>
+				<h4 class="h4"><a href="">The Tabels</a></h4>
+				<h4 class="h4"><a href="">The Media queries</a></h4>
+				<h4 class="h4"><a href="">The Example</a></h4>
+			</div>
+
+			<div class="info">
+				<h1 class="h1">A dead simple, responsive boilerplate.</h1>
+				<input type="radio" name="radio-set">
+				<a href="" class="btn doc-btn-down">Download</a>
+				<p>version: 1.0.0</p>
+				<p class="copyright">本项目源码受 MIT开源协议保护，文档受 CC BY 3.0 开源协议保护。</p>
+			</div>
+		</div>
+		</div>
+		<div class="section" id="section1">
+			<section class="grid-susy">
+			<h3 class="h3">The Grid</h3>
+				<div class="row">
+					<div class="one-column">one</div>
+					<div class="eleven-column">eleven</div>
+				</div>
+
+				<div class="row">
+					<div class="two-column">two</div>
+					<div class="ten-column">ten</div>
+				</div>
+
+				<div class="row">
+					<div class="three-column">three</div>
+					<div class="nine-column">nine</div>
+				</div>
+
+				<div class="row">
+					<div class="four-column">four</div>
+					<div class="eight-column">eight</div>
+				</div>
+
+				<div class="row">
+					<div class="five-column">five</div>
+					<div class="seven-column">seven</div>
+				</div>
+
+				<div class="row">
+					<div class="six-column">six</div>
+					<div class="six-column">six</div>
+				</div>
+
+				<div class="row">
+					<div class="seven-column">seven</div>
+					<div class="five-column">five</div>
+				</div>
+
+				<div class="row">
+					<div class="eight-column">eight</div>
+					<div class="four-column">four</div>
+				</div>
+
+				<div class="row">
+					<div class="nine-column">nine</div>
+					<div class="three-column">three</div>
+				</div>
+
+				<div class="row">
+					<div class="ten-column">ten</div>
+					<div class="two-column">two</div>
+				</div>
+
+				<div class="row">
+					<div class="eleven-column">eleven</div>
+					<div class="one-column">one</div>
+				</div>
+
+		</section>
+		</div>
+		<div class="section" id="section2">
+			<div class="intro">
+				<h1 class="title">Example</h1>
+				<p>The plug-in configuration parameters</p>
+				<img src="images/example2.png"/>
+			</div>
+		</div>
+		<div class="section" id="section3">
+			<div class="intro">
+				<h1 class="title">THE END</h1>
+				<p>Everything will be okay in the end. If it's not okay, it's not the end.</p>
+			</div>
+		</div>
+
+		<div class="section" id="section4">
+			<div class="intro">
+				<h1 class="title">Example</h1>
+				<p>The plug-in configuration parameters</p>
+				<img src="images/example2.png"/>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="js/pageswitch.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$("#container").switchPage({
+				'loop' : true,
+				'keyboard' : true,
+				'direction' : 'horizontal'
+			});
+		});
+	</script>
+</body>
+</html>
+</body>
+</html>

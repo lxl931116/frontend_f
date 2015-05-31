@@ -1,0 +1,334 @@
+@import 'susy';
+@import 'normalize';
+@import 'compass';
+
+$susy: (
+  global-box-sizing: border-box,
+  use-custom: (rem: true
+    )
+  );
+@include border-box-sizing;
+
+$size: 4px;
+$color: #fafafa;
+$font-color: #666;
+
+$primary:#5F8181;
+$width:300px;
+$border:darken($primary, 8%);
+
+
+
+body{
+	background-image:-webkit-linear-gradient(to top,#EcEcEc,#E3E3E3);
+    background-image:linear-gradient(to top,#EcEcEc,#E3E3E3);
+}
+*{
+	::selection { background:#CE6161; color:#EBEBEB;}
+	::-moz-selection { background:#CE6161; color:#EBEBEB;}
+	::-webkit-selection { background:#CE6161; color:#EBEBEB;}
+}
+a,a:visited,a:focus,a:link{text-decoration: none;}
+a{
+	color:$font-color;
+	font-weight: 600;
+	font-size: 1em;
+ 
+	&:hover{
+		@include transition(color, .2s ease-out);
+		color: #A1A1A1;
+	}
+}
+.p-justify{
+	text-align: justify;
+	line-height: 1.264;
+}
+
+.clear-ul{list-style: none};
+.warpper{
+	@include container;
+	@include clearfix;
+}
+
+.h1,.h2,.h3,.h4,.h5{
+	font-family: "Roboto Slab","ff-tisa-web-pro","Georgia",Arial,sans-serif;;
+}
+
+.h1{
+	@media (max-width: 960px){
+		visibility: hidden;
+	}
+	margin-left: $size*5;
+	border-bottom: 1px solid #E3E3E3;
+	padding-bottom: $size*5;
+	box-shadow: 0 1px 1px #FFFFFF;	
+}
+.h2{margin-top: $size*2;}
+
+.fixed-header{
+	font-family:'Big Caslon', 'Book Antiqua', 'Palatino Linotype', Georgia;
+	@include span(12 of 12);
+	background-color: #F7F7F7;
+	box-shadow: 0 1px 5px #CACACA;
+	display: none;
+		.nav{
+			margin-left: 22%;
+			background-color: #F7F7F7;
+			@media (max-width: 960px){
+				@include span(12 of 12);
+				position: fixed;
+				min-width: auto;
+				ul:before{
+					content:'nav';
+					position: absolute;
+					top: 0;
+					left: 50%;
+				}
+				ul{
+					margin-top: 20px;
+				}
+
+				li{
+					max-height: 0;
+					min-width: auto;
+				}
+
+				ul:hover li{
+					max-height: 400px;
+					@include transition(max-height, 2s,ease-in-out);
+				}
+			}
+
+			ul,li{
+				float: left;
+				@include clearfix;
+			}
+
+			ul{
+				@media (max-width: 1360px)and(min-width: 960px){
+					width: 100%;
+				}
+				@media(max-width: 960px)and(min-width: 780px){
+					margin-right: 10%;
+				}
+				@media(max-width: 780px)and(min-width: 480px){
+					width: 50%;
+					margin-right: 20%;
+				}
+				@media(max-width: 480px)and(min-width: 320px){
+					width: 45%;
+					margin-right: 25%;
+				}
+				@media(max-width: 320){
+					width: 35%;
+				}
+
+				@include span(6 of 8 last);
+				margin-right: 4px;
+			}
+
+			li{
+				@media(max-width: 320px){
+					display: inline;
+					width: 150px;
+				}
+			}
+
+			a{padding: .3em 1em;display: block;}
+		}
+		
+	}//header
+	
+	.container{
+	background-image:-webkit-linear-gradient(to top, #E3E3E3, #F6F6F6);
+    background-image:linear-gradient(to top,#E3E3E3, #F6F6F6);
+		@media (max-width: 960px){
+				@include span(12 of 12);
+				margin-top: -60px;
+			}
+
+		background-color: #F7F7F7;
+		@include span(8 of 12);
+		@include clearfix;
+		margin-left: 17%;
+		margin-bottom: 60px;
+		box-shadow: 0 0 10px #B4B4B4; 
+
+		.sub-container{
+				@media(max-width: 960px)and(min-width: 780px){
+					margin-right: -$size*20;
+				}
+				@media(max-width: 780px)and(min-width: 480px){
+					margin-right: -$size*12;
+				}
+				@media(max-width: 480px)and(min-width: 320px){
+					margin-right: -$size*5;
+				}
+				@media(max-width: 320px){
+					margin-right: -$size;
+				}
+			margin-right: $size*5;
+		}
+
+		.sidebar{
+			font-family:'Big Caslon', 'Book Antiqua', 'Palatino Linotype', Georgia;
+			@media (max-width: 960px){
+				display: none;
+			}
+
+			@include span(2 of 8);
+			@include clearfix;
+
+			.flod-sidebar,.sub-sidebar{
+				margin-left: -$size*5; 
+			}
+
+			.flod-sidebar{
+
+				.flod-effect{
+					&:hover .flod-ul-effect{
+						max-height: 600px;
+						@include transition(max-height, 2s,ease-in-out);
+					}
+				}
+
+				.flod-ul-effect{
+					padding-top: $size*3;
+					max-height: 0;
+					overflow: hidden; 
+
+					li{
+						margin-bottom: $size*4;
+					}
+				}
+			}
+
+			.sub-sidebar{
+				li{
+					margin-bottom: $size*8;
+				}
+			}
+			
+			dropdown span{
+				font-weight: 700;
+				color: $font-color;
+			}
+
+			dropdown label,dropdown ul li{
+			  display: block;
+			  padding: 15px 20px;
+			}
+			dropdown label:hover, dropdown ul li:hover{
+			  color: $font-color;
+			  cursor: pointer;
+			}
+			dropdown input{
+			  display: none;
+			}
+			dropdown input ~ ul{
+			  display: none; 
+			  margin-top: -12px;
+			}
+
+			dropdown input:checked ~ ul{
+			  display: block; 
+			}
+
+.animate{
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
+  -ms-transition: all .3s;
+  transition: all .3s;  
+}
+		}
+
+		//side
+
+		.content{
+			font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial;
+			@media (max-width: 960px){
+				@include span(7 of 8);
+				margin-left: $size*5;
+
+			}
+			@include span(6 of 8 last);
+			@include clearfix;
+
+			.article,.summary{
+				margin-bottom: $size*20;
+				font-size: 1em;
+			}
+			.more{
+				float: right;
+				font-size: .8em;
+			}
+
+			.Media{
+				img{
+					float: left;
+					shape-outside: circle(50%);
+				}
+			}
+		}
+	}
+	//container
+
+	.footer{
+		font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial;
+		@media (max-width: 1150px){
+				display: none;
+			}
+
+		@include span(8 of 8);
+		@include clearfix;
+		margin-bottom: 30px;
+
+		.sub-footer{
+			margin-left: $size*5;
+			margin-right: $size*5;
+			border-top: 1px solid #DADADA;
+			box-shadow: 0 1px 1px #F7F7F7;
+		}
+
+		.footer-left,.footer-right{
+			margin-top: $size*5;
+			@include span(4 of 8);
+			img{
+				vertical-align: middle;
+			}
+		}
+
+		.icon{
+			margin-bottom: $size*5;
+			margin-right: $size*2;
+			
+			@media (max-width: 960px){
+				display: none;
+			}
+
+
+			&:hover{
+				@include transition(transform, 1s, ease-out);
+				-webkit-transform: rotateX(360deg);
+				-moz-transform: rotateX(360deg);
+				-o-transform: rotateX(360deg);
+				transform: rotateX(360deg);
+			}
+		}
+
+		.footer-right{
+			@include last;
+			p{
+				margin-top: $size*8;
+				line-height: 2em;
+			}
+		}
+
+		.copyright{
+			@include span(8 of 8);
+			margin-left: 12%;
+			margin-top: 20px;
+			color: #C3C3C3;
+		}
+	}
