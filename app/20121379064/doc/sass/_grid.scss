@@ -1,0 +1,114 @@
+@import 'susy';
+@import 'animation';
+$susy: (
+  global-box-sizing: border-box,
+  use-custom: (rem: true
+    )
+  );
+$susy: (
+  columns: 12,
+  gutters: 0,
+);
+@include border-box-sizing;
+
+.grid-susy
+{
+
+    background: #008792;
+    @include container;
+    padding-top: 3%;
+    .h1{
+        color: #fff;
+        text-align: center;
+        margin-left: 40px;
+        padding-bottom: 60px;
+    }
+
+    .row
+    {
+        width: 960px;
+        height: 30px;
+        margin: 0 auto;
+        padding-left: 40px;
+    }
+    .column
+    {
+        line-height: 30px;
+
+        margin-top: 5px;
+
+        text-align: center;
+
+        color: #fff;
+        border-radius: 5px;
+        padding: 1px;
+
+    }
+    .one-column
+    {
+        @extend .column;
+        @include span(1 of 12);
+        background: #8a5d19;
+
+    }
+    .two-column
+    {
+        @extend .column;
+        @include span(2 of 12);
+        background: #8f4b2e;
+    }
+    .three-column
+    {
+        @extend .column;
+        @include span(3 of 12);
+        background: #87481f;
+    }
+    .four-column
+    {
+        @extend .column;
+        @include span(4 of 12);
+        background: #5f3c23;
+    }
+    .five-column
+    {
+        @extend .column;
+        @include span(5 of 12);
+        background: #4a3113;
+    }
+    .six-column
+    {
+        @extend .column;
+        @include span(6 of 12);
+        background: #6b473c;
+    }
+    .seven-column
+    {
+        @extend .column;
+        @include span(7 of 12);
+        background: #2e3a1f;
+    }
+    .eight-column
+    {
+        @extend .column;
+        @include span(8 of 12);
+        background: #454926;
+    }
+    .nine-column
+    {
+        @extend .column;
+        @include span(9 of 12);
+        background: #726930;
+    }
+    .ten-column
+    {
+        @extend .column;
+        @include span(10 of 12);
+        background: #80752c;
+    }
+    .eleven-column
+    {
+        @extend .column;
+        @include span(11 of 12);
+        background: #7f7522;
+    }
+}

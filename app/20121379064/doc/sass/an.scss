@@ -1,0 +1,100 @@
+@import 'compass';
+@import 'compass/css3/animation';
+
+@include keyframes (titlelft)
+{
+    0%
+    {
+        @include translateX(-100%,0);
+    }
+    100%
+    {
+        @include translateX(0,0);
+    }
+}
+
+//左边飞入
+
+
+@include keyframes (titlergt)
+{
+    0%
+    {
+        @include translateX(100%,0);
+    }
+    100%
+    {
+        @include translateX(0,0);
+    }
+}
+//右边飞入
+
+@include keyframes (topdown)
+{
+    0%
+    {
+        @include translateY(-650%,0);
+    }
+    100%
+    {
+        @include translateX(0,0);
+    }
+}
+//降落
+
+@include keyframes (topdown)
+{
+    0%
+    {
+        @include translateY(-650%,0);
+    }
+    100%
+    {
+        @include translateX(0,0);
+    }
+}
+
+
+
+@include keyframes (opacity)
+{
+    0%
+    {
+        opacity: 0;
+    }
+    100%
+    {
+        opacity: 1;
+    }
+}
+
+//淡入
+
+
+@include keyframes (close)
+{
+    0%
+    {
+        @include rotateX(0);
+    }
+    25%
+    {
+        @include rotateX(89deg);
+    }
+    50%
+    {
+        width: 0;
+    }
+    100%
+    {
+        width: 100%;
+
+        @include rotateX(89deg);
+    }
+}
+
+//关闭
+p{ font-size:18px; line-height:200%; text-align:center;}
+.yapiskan {background:#e74c3c;color:white;font-size:24px;padding:5px;text-align:center;position: fixed;left:0;top:0;width:100%;transition: top .5s;}
+.gizle {@include animation(titlergt 1s ease-in-out 100ms forwards);}
+.sabit {top:0;z-index: 9999;}
