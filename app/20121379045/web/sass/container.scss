@@ -1,0 +1,388 @@
+$width: 1000px;
+$body_width: 100%;
+$margin:0 auto;
+$font_size: 22px;
+$color:#fff;
+$font_color: #333;
+$nav_color: #bc1e1e;
+.wrap{
+	width: $width;
+	margin: $margin;
+}
+.logo{
+	height: 60px;
+	width: $width;
+	margin-top: 20px;
+}
+.logo_left{
+	float: left;
+}
+form{
+	float: right;
+	background-color: $color;
+	margin-top: 10px;
+	font-size: 0;
+}
+.search-input{
+	width: 200px;
+	height: 23px;
+	padding: 0 10px;
+	border:{
+	    color: #ccc;
+	    style: solid;
+	    width: 1px;
+	} 
+
+}
+.search-button{
+	border: 0;
+	cursor: pointer;
+	height: 25px;
+	width: 50px;
+	background-color: #333;
+	vertical-align:top;
+	p{
+	    color: $color;
+        font-size: 12px;
+        font-weight: bold;
+	}
+
+}
+.nav{
+	height: 40px;
+	width: $width;
+	background-color: #bc1e1e;
+}
+.nav-left{
+	float: left;
+	li{
+	    list-style: none;
+	    float: left;
+	    padding: 15px;
+	    line-height: 10px;
+	    a{
+	        text-decoration: none;
+	        color: $color;
+	        font-weight: bold;
+	    }
+	}
+}
+.nav-right{
+	float: right;
+	li{
+	    list-style: none;
+	    float: left;
+	    padding: 15px;
+	    line-height: 10px;
+        a{
+            text-decoration: none;
+	        color: $color;
+	        font-weight: bold;
+        }
+	}
+}
+.ad{
+	height: 400px;
+	overflow: hidden;
+	clear: both;
+}
+
+.news{
+	width: $width;
+	height: 250px;
+}
+.news-list{
+	float: left;
+	padding: 30px 45px 0 45px;
+	p{
+	    width: 105px;
+	a{
+	    color: $nav_color;
+	    text-decoration: none;
+	    font-size: $font_size;
+	    &:hover{
+	        text-decoration: underline;
+	        color: $nav_color;
+	    }
+	}
+	}
+	li{
+	    padding:  10px 10px 10px 5px;
+	    a{
+	        font-size: 18px;
+	        text-decoration: none;
+	        color: $font_color;
+	        &:hover{
+	            text-decoration: underline;
+	            color: $nav_color;
+	        }
+	    }
+	}
+}
+.table-line{
+	width: 1px;
+	height: 160px;
+	background-color: $nav_color;
+	float: left;
+	margin: 10px 15px 0 0;
+}
+.list-text{
+    height: 20px;
+    clear: both;
+	p{
+	    padding: 10px 0 0 0;
+	a{
+	    text-decoration: none;
+	    color: $font_color;
+	    font-size: 24px;
+	    float: left;
+	    &:hover{
+	        color: $nav_color;
+	    }
+	}
+	}
+}
+
+.r-bar{
+	float: right;
+	a{
+	   
+	    &:hover{
+	        text-decoration: underline;
+	    }
+	}
+}
+
+.line{
+	width: 120px;
+	height: 1px;
+	background-color: #bc1e1e;
+	clear: both;
+}
+.area-left{
+	height: 150px;
+	width: 400px;
+	clear: both;
+	float: left;
+	p{
+	    padding: 10px;
+	    a{
+	        text-decoration: none;
+	        color: $font_color;
+	        font-size: 20px;
+	        &:hover{
+	        color: $nav_color;
+	    }
+	    }
+	}
+}
+.area-right{
+	float: left;
+	p{
+	    padding: 10px;
+	    a{
+	        text-decoration: none;
+	        color: $font_color;
+	        font-size: 20px;
+	        &:hover{
+	        color: $nav_color;
+	    }
+	    }
+	}
+}
+.top-ul{
+	ul{
+	    padding: 10px 0 0 0;
+	li{
+	    float: left;
+	    padding:10px 0 0 35px;
+	    a{
+	        text-decoration: none;
+	        color: $font_color;
+	        &:hover{
+	            color: $nav_color;
+	        }
+	    }
+	}
+	}
+}
+.bottom-ul{
+    ul{
+    clear: both;
+    padding: 20px 0 0 0;
+    
+    li{
+        float:left;
+        padding:10px 0 0 35px;
+        a{
+	        text-decoration: none;
+	        color: $font_color;
+	        &:hover{
+	            color: $nav_color;
+	        }
+	    }
+    }
+    }
+}
+
+.b-pic{
+    ul{
+        width: $width;
+        padding:  0 0 0 20px;
+	li{
+	    list-style: none;
+	    float: left;
+	    padding: 20px;
+	}
+
+	p{
+	    a{
+	        text-decoration: none;
+	        color: $font_color;
+	        &:hover{
+	            color: $nav_color;
+	        }
+	    }
+	}
+	}
+}
+
+.c-pic{
+    ul{
+        width: $width;
+        padding:  0 0 0 20px;
+	li{
+	    list-style: none;
+	    float: left;
+	    padding: 20px;
+	}
+
+	p{
+	    a{
+	        text-decoration: none;
+	        color: $font_color;
+	        &:hover{
+	            color: $nav_color;
+	        }
+	    }
+	}
+	}
+}
+.text{
+	clear: both;
+	ul{
+	    float: left;
+	    padding:  0 0 0 40px;
+	    li{
+	        padding:  10px 0 20px 0;
+	        a{
+	            text-decoration: none;
+	            color: $font_color;
+	            &:hover{
+	            color: $nav_color;
+	        }
+	        }
+	    }
+	}
+}
+.d-pic{
+    ul{
+        width: $width;
+        padding:  0 0 0 20px;
+	li{
+	    list-style: none;
+	    float: left;
+	    padding: 20px 40px 20px 20px;
+	}
+
+	p{
+	    padding: 10px 0 0 0;
+	    a{
+	        text-decoration: none;
+	        color: $font_color;
+
+	        &:hover{
+	            color: $nav_color;
+	        }
+	    }
+	}
+	}
+}
+.footer{
+	width: $body_width;
+	background-color: #eee;
+	height: 300px;
+	clear:both;
+}
+
+.footer-box{
+	width: 1000px;
+	margin: 0 auto;
+	height: 300px;
+	clear:both;
+	p{
+	    color: $font_color;
+	    font-size: 12px;
+	    padding: 10px 0 0 35px;
+	}
+}
+.footer-list{
+	ul{
+	   li{
+	       float: left;
+	       padding: 35px 35px 10px 35px;
+	       a{
+	          text-decoration: none;
+	           color: $font_color;
+	           font-size: 14px;
+	           &:hover{
+	               color: $nav_color;
+	               
+	           }
+	       }
+	   }
+	}
+}
+.footer-line{
+	width: 900px;
+	height: 1px;
+	background-color: #ccc;
+	clear: both;
+	margin: 15px 0 0 35px;
+}
+.footer-link{
+    float: left;
+    padding: 0 65px 0 0;
+    p{
+         padding: 10px 10px 0 35px;
+        a{
+            text-decoration: none;
+	           color: $font_color;
+	           font-size: 14px;
+	           &:hover{
+	               color: $nav_color;
+	               
+	           }
+        }
+    }
+	ul{
+	    padding: 10px 10px 0 35px;
+	    li{
+	          padding: 5px 0 0 0;
+	    a{
+	        text-decoration: none;
+	           color: $font_color;
+	           font-size: 12px;
+	           &:hover{
+	               color: $nav_color;
+	               
+	           }
+	    }
+	    }
+	}
+}
+.link-ul{
+	float:left;
+	margin-bottom: 20px;
+
+}

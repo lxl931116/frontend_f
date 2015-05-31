@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html"; charset="utf-8"/>
+	<title></title>
+	<link rel="stylesheet" href="./stylesheets/screen.css" type="text/css">
+	<link rel="stylesheet" href="./stylesheets/head.css" type="text/css">
+    <link rel="stylesheet" href="./stylesheets/body.css" type="text/css">
+</head>
+<body>
+    <div class="top-bg">
+        <div class="top">
+           <h1>CSS Frame</h1>
+        </div><!--top-->
+    </div>
+    
+       <div class="nav-bg">
+       <div class="frame-nav">
+                <ul>
+                    <li><a href="#">Color</a></li>
+                    <li><a href="#">Nav</a></li>
+                    <li><a href="#">Layout</a></li>
+                    <li><a href="#">Button</a></li>
+                    <li><a href="#">Form</a></li>
+                    
+                </ul>
+        </div><!--frame-nav-->
+        </div><!--nav-bg-->
+        <div class="container">
+            <div class="word-list">
+                <h2>Color</h2>
+                    <div class="red"></div>
+                    <div class="gray"></div>
+                    <div class="white"></div>
+            </div><!--word-list-->
+
+            <div class="word-list">
+                <h2>Nav</h2>
+                <div class="word">
+                    <div class="nav">
+                    <div class="nav-left">
+                    <ul>
+                        <li><a href="#">首页</a></li>
+                        <li><a href="#">菜谱</a></li>
+                        <li><a href="#">食材</a></li>
+                        <li><a href="#">日志</a></li>
+                        <li><a href="#">健康</a></li>
+                    </ul>
+                    </div>
+                    <div class="nav-right">
+                    <ul>
+                        <li><a href="#">我的菜谱</a></li>
+                        <li><a href="#">我的收藏</a></li>
+                    </ul>
+                    </div>
+                    </div><!--nav-->
+                    <p>HTML文档
+                        <br>&ltdiv class="nav"&gt
+                        <br>&ltdiv class="nav-left"&gt
+                        <br>&ltul&gt
+                        <br>&ltli&gt&lta href="#"&gt首页&lt/a&gt&lt/li&gt
+                        <br>&ltli&gt&lta href="#"&gt菜谱&lt/a&gt&lt/li&gt
+                        <br> &ltli&gt&lta href="#"&gt食材&lt/a&gt&lt/li&gt
+                        <br>&ltli&gt&lta href="#"&gt日志&lt/a&gt&lt/li&gt
+                        <br> &ltli&gt&lta href="#"&gt健康&lt/a&gt&lt/li&gt
+                        <br>&lt/ul&gt
+                        <br> &lt/div&gt
+                        <br> &ltdiv class="nav-right"&gt
+                        <br> &ltul&gt
+                        <br>&ltli&gt&lta href="#"&gt我的菜谱&lt/a&gt&lt/li&gt
+                        <br> &ltli&gt&lta href="#"&gt我的收藏&lt/a&gt&lt/li&gt
+                        <br> &lt/ul&gt
+                        <br> &lt/div&gt
+                        <br> &lt/div&gt&lt!--nav--&gt
+                        </p>
+
+                            <p>CSS样式
+                            <br>.nav {height: 40px; width: 600p background-color: #bc1e1e;}
+                            <br>.nav-left { float: left;}
+                            <br>.nav-left li {list-style: none;float: left;padding: 15px;line-height: 10px;}
+                            <br>.nav-left li a {text-decoration: none; color: #fff; font-weight: bold;}
+                            <br>.nav-right {float: right;}
+                            <br>.nav-right li {list-style: none; float: left; padding: 15px;line-height: 10px;}
+                            <br>.nav-right li a {text-decoration: none; color: #fff; font-weight: bold;}
+                            </p>
+                    </div><!--word-->
+            </div><!--word-list-->
+
+            <div class="word-list">
+                <h2>Layout</h2>
+                <img src="images/layout.jpg" alt="" class="pic" />
+                <div class="box">
+                <p>
+                   HTML文档
+                   <br>&ltdiv class="box1"&gt&lt/div&gt
+                    <br>&ltdiv class="wrap"&gt
+                        <br>&ltdiv class="box2"&gt&lt/div&gt
+                        <br>&ltdiv class="box3"&gt&lt/div&gt
+                        <br>&ltdiv class="box4"&gt&lt/div&gt
+                        <br>&ltdiv class="box5"&gt&lt/div&gt
+                        <br>&ltdiv class="box6"&gt&lt/div&gt
+                    <br>&lt/div&gt
+                    <br>&ltdiv class="box7"&gt&lt/div&gt
+                <br>&lt/div&gt
+               </p>
+               <p>
+                   CSS样式
+                   <br>.box1{width:100%; background-color:#ccc; height:40px;}
+                   <br>.wrap{width:1000px; margin:0 auto; height:1030px;background-color:#ccc;}
+                   <br>.box2{height:background-color:#ccc;40px;}
+                   <br>.box3{height:background-color:#ccc;300px;}
+                   <br>.box4{float:left; width:400px; height:400px;background-color:#ccc;padding:20px 0 0 20px;}
+                   <br>.box5{float:left; width:500px; height:400px;background-color:#ccc;padding:20px 0 0 0;}
+                   <br>.box6{height:300px;}
+                   <br>.box7{width:100%; background-color:#ccc; height:40px;}
+               </p> 
+                    
+            </div><!--word-list-->
+
+            <div class="word-list">
+                <h2>Button</h2>
+                 <div class="B-box">
+                 <button type="button" class="search-button"><p>搜索</p></button>
+                    <p class="B-p">
+                        HTML文档
+                        <br>&ltbutton type="button" class="search-button"&gt&ltp&gt搜索&lt/p&gt&lt/button&gt
+                    </p>
+                    <p class="B-p">
+                        CSS样式
+                        <br>.search-button{margin: 20px; border: 0; cursor: pointer; height: 50px;      width:100px;background-color: #333; vertical-align:top;}
+                        <br>.search-button p{color: $color; font-size: 24px;font-weight: bold;}
+
+                    </p>  
+                </div>
+            </div><!--word-list-->
+
+            <div class="word-list">
+                <h2>Form</h2>
+                <div class="B-box">
+                 <input type="text" class="search-input"/>
+                    <p class="B-p">
+                        HTML文档
+                        <br>&ltinput type="text" class="search-input"/&gt
+                    </p>
+                    <p class="B-p">
+                        CSS样式
+                        .search-input{width: 200px; height: 23px;padding: 0 10px;
+                        border:{color: #ccc; style: solid;width: 1px;} }
+                    </p>  
+                </div>
+            </div><!--word-list-->
+        </div><!--container-->
+</body>	
+</html>

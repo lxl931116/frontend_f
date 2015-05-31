@@ -1,0 +1,32 @@
+$body_width:100%;
+$color:#ccc;
+$width:960px;
+
+.top{
+	background:$color;
+	width: $body_width;
+	height: 36px;
+}
+.top_content{
+	width:$width;
+	margin: 0 auto;
+	li{
+	    list-style: none;
+	    width: 70px;
+	}
+	a{
+	    text-decoration: none;
+	    color: #ffffff;
+	    display:block;
+	    text-indent:20px; 
+	    height:36px; 
+	    line-height:36px; 
+	    width:70px; 
+	    background-color:$color;
+	    font-weight: bold;
+	       &:hover{
+	            color:#fff;
+	            background-color:#666;
+	    }
+	    }
+}

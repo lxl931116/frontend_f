@@ -1,0 +1,112 @@
+$body_width:100%;
+$width:960px;
+$body_color:#efefef;
+$color:#ccc;
+$font_color: #fff;
+$box_color: #333;
+$hover_color: #666;
+$text_width:820px;
+$text_size: 18px;
+$a_width: 100px;
+$height: 40px;
+$body_height: 1500px;
+
+body{
+	width: $body_width;
+	background-color: $body_color;
+	height: $body_height;
+}
+.top-bg{
+    background-color: $color;
+    width: $body_width;
+}
+.top{
+	background-color: $color;
+	height:60px;
+	width: $width;
+	margin: 0 auto;
+	h1{
+	    color: $font_color;
+	    font-weight: bold;
+	    font-size: 28px;
+	    line-height:60px;
+
+	}
+}
+.nav-bg{
+	background-color: $box_color;
+}
+.frame-nav{
+	height: $height;
+	margin: 0 auto;
+	width: $body_width;
+	li{
+	    float: left;
+	    a{
+	        text-decoration: none;
+	        text-align: center;
+            color: $color;
+            display: block;
+            height: $height;
+            width: $a_width;
+            line-height: $height;
+            font-weight: bold;
+            &:hover{
+                   color: $font_color;
+                   background-color: $hover_color;
+            }
+	    }
+	}
+}
+@media screen and(max-width: 600px) {
+  .nav-bg{
+	width: 100px;
+}
+    .frame-nav{
+    background-color: $box_color;
+	height: 200px;
+	li{
+	    a{
+	        text-decoration: none;
+	        text-align: center;
+            color: $body_color;
+            display: block;
+            height: $height;
+            width: 100px;
+            line-height: $height;
+            font-weight: bold;
+            &:hover{
+                   color: $font_color;
+                   background-color: #666;
+            }
+	    }
+	}
+}
+}
+@media screen and(min-width: 960px) {
+  .nav-bg{
+	background-color: $box_color;
+	width: $body_width;
+}
+  .frame-nav{
+	height: $height;
+	margin: 0 auto;
+	li{
+	    float: left;
+	    a{
+	        text-decoration: none;
+	        text-align: center;
+            color: $color;
+            display: block;
+            height: $height;
+            width: 100px;
+            line-height: $height;
+            font-weight: bold;
+            &:hover{
+                   color: $font_color;
+                   background-color: #666;
+            }
+	    }
+	}
+}
+}

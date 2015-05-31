@@ -1,0 +1,156 @@
+$body_width:100%;
+$color_width: 80px;
+$list_width: 960px;
+$box_width: 960px;
+$color:#ccc;
+$font_color: #fff;
+$height: 40px;
+$color_height: 80px;
+$box_height: 530px;
+
+.word-list{
+	width: $body_width;
+	height: $height;
+	background-color: $color;
+	clear: both;
+	width: $list_width;
+	margin: 0 auto;
+	margin-top: 20px;
+	h2{
+	    color: $font_color;
+	    font-size: 24px;
+	    font-weight: bold;
+	    line-height: $height;
+	    
+	}
+}
+
+.red{
+	height: $color_height;
+	width: $color_width;
+	background-color: #bc1e1e;
+	float: left;
+	margin:20px 50px 20px 30px;
+}
+.gray{
+	height: $color_height;
+	width: $color_width;
+	background-color: #333;
+	float: left;
+	margin:20px 50px 20px 30px;
+}
+.white{
+	height: $color_height;
+	width: $color_width;
+	background-color: #fff;
+	float: left;
+	margin:20px 50px 20px 30px;
+}
+.word{
+	background-color: $font_color;
+	width: $box_width;
+	height: $box_height;
+	float:left;
+	margin: 30px 0 20px 0;
+	p{
+	    clear: both;
+	    margin: 20px;
+	}
+
+}
+.nav {
+    margin: 20px;
+    height: 40px;
+    width: 600px;
+    background-color: #bc1e1e;
+}
+
+.nav-left {
+  float: left;
+}
+
+.nav-left li {
+  list-style: none;
+  float: left;
+  padding: 15px;
+  line-height: 10px;
+}
+
+.nav-left li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+
+.nav-right {
+  float: right; 
+}
+
+.nav-right li {
+  list-style: none;
+  float: left;
+  padding: 15px;
+  line-height: 10px;
+}
+
+.nav-right li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+.box{
+	background-color: $font_color;
+	width: 440px;;
+	height: 500px;
+	float:left;
+	margin: 20px 0 20px 0;
+	p{
+	    margin: 20px;
+	}
+}
+.pic{
+	 margin: 20px 20px 20px 0;
+	 float:left;
+
+}
+.search-button{
+    margin: 20px;
+	border: 0;
+	cursor: pointer;
+	height: 50px;
+	width: 100px;
+	background-color: #333;
+	vertical-align:top;
+	float:left;
+	p{
+	    color: $font_color;
+        font-size: 24px;
+        font-weight: bold;
+
+	}
+
+}
+.B-box{
+	background-color: $font_color;
+	width:$box_width;
+	height: 150px;
+	float:left;
+	margin: 20px 0 20px 0;
+}
+.B-p{
+	margin: 20px;
+}
+
+.search-input{
+    margin: 20px 0 0 20px;
+	width: 200px;
+	height: 23px;
+	padding: 0 10px;
+	border:{
+	    color: #ccc;
+	    style: solid;
+	    width: 1px;
+	} 
+
+}

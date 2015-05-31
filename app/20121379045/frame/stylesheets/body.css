@@ -1,0 +1,168 @@
+/* line 11, ../sass/body.scss */
+.word-list {
+  width: 100%;
+  height: 40px;
+  background-color: #ccc;
+  clear: both;
+  width: 960px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+/* line 19, ../sass/body.scss */
+.word-list h2 {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 40px;
+}
+
+/* line 28, ../sass/body.scss */
+.red {
+  height: 80px;
+  width: 80px;
+  background-color: #bc1e1e;
+  float: left;
+  margin: 20px 50px 20px 30px;
+}
+
+/* line 35, ../sass/body.scss */
+.gray {
+  height: 80px;
+  width: 80px;
+  background-color: #333;
+  float: left;
+  margin: 20px 50px 20px 30px;
+}
+
+/* line 42, ../sass/body.scss */
+.white {
+  height: 80px;
+  width: 80px;
+  background-color: #fff;
+  float: left;
+  margin: 20px 50px 20px 30px;
+}
+
+/* line 49, ../sass/body.scss */
+.word {
+  background-color: #fff;
+  width: 960px;
+  height: 530px;
+  float: left;
+  margin: 30px 0 20px 0;
+}
+/* line 55, ../sass/body.scss */
+.word p {
+  clear: both;
+  margin: 20px;
+}
+
+/* line 61, ../sass/body.scss */
+.nav {
+  margin: 20px;
+  height: 40px;
+  width: 600px;
+  background-color: #bc1e1e;
+}
+
+/* line 68, ../sass/body.scss */
+.nav-left {
+  float: left;
+}
+
+/* line 72, ../sass/body.scss */
+.nav-left li {
+  list-style: none;
+  float: left;
+  padding: 15px;
+  line-height: 10px;
+}
+
+/* line 79, ../sass/body.scss */
+.nav-left li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* line 86, ../sass/body.scss */
+.nav-right {
+  float: right;
+}
+
+/* line 90, ../sass/body.scss */
+.nav-right li {
+  list-style: none;
+  float: left;
+  padding: 15px;
+  line-height: 10px;
+}
+
+/* line 97, ../sass/body.scss */
+.nav-right li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* line 102, ../sass/body.scss */
+.box {
+  background-color: #fff;
+  width: 440px;
+  height: 500px;
+  float: left;
+  margin: 20px 0 20px 0;
+}
+/* line 108, ../sass/body.scss */
+.box p {
+  margin: 20px;
+}
+
+/* line 112, ../sass/body.scss */
+.pic {
+  margin: 20px 20px 20px 0;
+  float: left;
+}
+
+/* line 117, ../sass/body.scss */
+.search-button {
+  margin: 20px;
+  border: 0;
+  cursor: pointer;
+  height: 50px;
+  width: 100px;
+  background-color: #333;
+  vertical-align: top;
+  float: left;
+}
+/* line 126, ../sass/body.scss */
+.search-button p {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* line 134, ../sass/body.scss */
+.B-box {
+  background-color: #fff;
+  width: 960px;
+  height: 150px;
+  float: left;
+  margin: 20px 0 20px 0;
+}
+
+/* line 141, ../sass/body.scss */
+.B-p {
+  margin: 20px;
+}
+
+/* line 145, ../sass/body.scss */
+.search-input {
+  margin: 20px 0 0 20px;
+  width: 200px;
+  height: 23px;
+  padding: 0 10px;
+  border-color: #ccc;
+  border-style: solid;
+  border-width: 1px;
+}
