@@ -1,0 +1,32 @@
+*{
+	font: normal 100% "楷体";
+	color: white;
+}
+header{
+	background: url(../images/top.jpg) no-repeat;
+}
+.p{
+	font-weight: bold;
+	font-size: 1.5em;
+	line-height: 170px;
+}
+.bg{
+	background: #F3AF5E;
+}
+article{
+	overflow: hidden;
+	background: url(../images/bg.jpg) no-repeat;
+}
+article>hgroup{
+	background-color: #A26E47;
+		}
+article>#cont li{
+	overflow: hidden;
+	transition: width 0.5s, height 0.5s, transform 0.5s;
+	-moz-transition: width 0.5s, height 0.5s, -moz-transform 0.5s;
+	-webkit-transition: width 0.5s, height 0.5s, -webkit-transform 0.5s;
+	-o-transition: width 0.5s, height 0.5s,-o-transform 0.5s;
+}	
+#fp{
+	line-height: 100px;
+}	
